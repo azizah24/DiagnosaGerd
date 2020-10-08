@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f37778"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".MengatasiFrag">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="false">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintGuide_percent="0.01"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="329dp"
+            android:layout_height="320dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgv"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/antas" />
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namatvv"
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Guna mengatasi gejala GERD, Anda bisa mengonsumsi obat-obatan golongan berikut ini:  \n\nAntasida. H-2 receptor blockers, seperti cimetidine, famotidine, dan ranitidine. \nProton pump inhibitors (PPIs), seperti lansoprazole dan omeprazole.\n\nUntuk menentukan jenis obat mana yang cocok dan tepat digunakan untuk mengobati penyakit GERD, Anda perlu berkonsultasi ke dokter terlebih dahulu."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/awal"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#ffdedb"
+            android:fontFamily="@font/molengo"
+            android:text="Di samping mengonsumsi beberapa obat di atas, melakukan perubahan gaya hidup juga penting dilakukan supaya gejala GERD tidak kambuh kembali. Perubahan yang dapat dilakukan yaitu"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.789"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay1" />
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="329dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/awal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvjar"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/beratbdn" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/jari"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Menurunkan berat badan, jika memiliki berat badan yang berlebih."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="329dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvsmoke"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/smoke" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/smoke"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Tidak merokok."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay4"
+            android:layout_width="329dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay3">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img2"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/tdur" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Meninggikan kepala saat tidur."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay5"
+            android:layout_width="329dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay4">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img3"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/bntal" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Tidak berbaring atau tidur setidaknya dalam waktu 2 hingga 3 jam setelah makan."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay6"
+            android:layout_width="329dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay5">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img4"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/mkanalambung" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Menghindari makanan atau minuman yang memicu asam lambung naik, seperti alkohol, susu, makanan yang pedas dan berlemak, cokelat, mint, dan kopi."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay7"
+            android:layout_width="329dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay6">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img5"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/baju" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Tidak mengenakan pakaian yang terlalu ketat."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay8"
+            android:layout_width="329dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay7">
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

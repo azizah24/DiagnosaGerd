@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f37778"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".Pemeriksaan">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="false">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintGuide_percent="0.0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="#ffdedb"
+            android:fontFamily="@font/molengo"
+            android:text="Dokter juga dapat melakukan pemeriksaan lanjutan untuk mengetahui tingkat keparahan penyakit dan melihat kemungkinan terjadinya komplikasi . Pemeriksaan lanjutan tersebut berupa:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="355dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgv"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ekg" />
+
+            <LinearLayout
+                android:layout_width="258dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namatvv"
+                    android:layout_width="226dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pemeriksaan EKG bertujuan untuk melihat adanya penyakit jantung koroner atau serangan jantung, karena kedua penyakit ini menimbulkan gejala yang mirip dengan GERD, yaitu nyeri dada."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="355dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvjar1"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/gasko" />
+
+            <LinearLayout
+                android:layout_width="258dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/jari1"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gastroskopi atau endoskopi menggunakan alat khusus seperti selang berkamera, untuk mendeteksi peradangan pada esofagus atau kerongkongan (esofagitis) akibat asam lambung naik. Dengan pemeriksaan ini, sampel jaringan dari esofagus dapat diambil dan diperiksa di bawah mikroskop (biopsi esofagus)."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay4"
+            android:layout_width="355dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay3">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvjar2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/makon" />
+
+            <LinearLayout
+                android:layout_width="258dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/jari2"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Manometri esofagus Tes ini dilakukan untuk memeriksa irama gerakan otot saat menelan, serta mengukur kekuatan otot kerongkongan"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay5"
+            android:layout_width="355dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay4">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvjar3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/omd" />
+
+            <LinearLayout
+                android:layout_width="258dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/jari3"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Foto Rontgen saluran pencernaan bagian atas (foto Rontgen OMD) Pemeriksaan ini dilakukan untuk melihat rongga saluran pencernaan atas dan lapisannya. Bila ada peradangan atau penyempitan kerongkongan akan terlihat pada foto tersebut."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay6"
+            android:layout_width="355dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay5">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvjar4"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/asm" />
+
+            <LinearLayout
+                android:layout_width="258dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/jari4"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pengukuran tingkat keasaman (pH) kerongkongan Pengukuran ini dilakukan dengan memasukkan selang atau kateter ke dalam kerongkongan. Selang ini terhubung ke komputer untuk mengukur tingkat keasaman kerongkongan saat penderita melakukan aktivitas sehari-hari, seperti makan atau tidur."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay8"
+            android:layout_width="329dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay6">
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

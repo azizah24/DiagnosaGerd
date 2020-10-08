@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f37778"
+    tools:context=".About">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="false">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="374dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/molengo"
+            android:gravity="center"
+            android:text="Mohon maaf jika ada kesalahan, ketidaktepatan dan kekurangan dari Sistem kami.\nSekian dan terimakasih.\nSalam sehat untuk kita semua."
+            android:textColor="@color/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.619"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintGuide_percent="0.0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="286dp"
+            android:layout_height="265dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgv"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/burima" />
+
+            <LinearLayout
+                android:layout_width="263dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namatvv"
+                    android:layout_width="242dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="Rima Tamara Aldisa, S.Kom., M.Kom.\n Dosen"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="286dp"
+            android:layout_height="265dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgv2"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/azizah" />
+
+            <LinearLayout
+                android:layout_width="263dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namatvv2"
+                    android:layout_width="242dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="Azizah\nMahasiswa"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f37778"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".Bahayagerd">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="false">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintGuide_percent="0.02"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/molengo"
+            android:text="Bila penyakit asam lambung tidak ditangani sampai tuntas, komplikasi berupa peradangan pada saluran kerongkongan atau esofagus dapat terjadi. Seiring berjalannya waktu, peradangan kronis dapat berkembang dan menyebabkan komplikasi berikut:"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="329dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgv"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/esofa" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namatvv"
+                    android:layout_width="226dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Penyempitan kerongkongan (striktur esofagus). Peradangan yang terjadi pada kerongkongan dapat menyebabkan jaringan parut terbentuk. Jaringan parut tersebut dapat mempersempit jalur makanan, sehingga pengidap akan sulit menelan."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="329dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvjar"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/borok" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/jari"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Luka terbuka di kerongkongan (borok esofagus). Asam lambung dapat menghilangkan jaringan di kerongkongan dan menyebabkan luka terbuka. Ulkus esofagus dapat berdarah dan menimbulkan rasa sakit, sehingga pengidap akan kesulitan untuk menelan makanan."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="329dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvsmoke"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/baret" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/smoke"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Perubahan prakanker pada esofagus (Barrett’s esophagus). Kerusakan kerongkongan akibat refluks asam lambung dapat menyebabkan perubahan jaringan yang melapisi esofagus bagian bawah. Perubahan-perubahan ini dikaitkan dengan peningkatan risiko kanker kerongkongan."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/molengo"
+            android:text="Melihat bahaya penyakit asam lambung di atas yang cukup serius, kamu dianjurkan untuk mengunjungi dokter bila mengalami gejala asam lambung, agar bisa mendapatkan penanganan yang tepat. Penyakit asam lambung sebenarnya dapat diatasi dengan perubahan gaya hidup dan obat-obatan yang dijual bebas. Namun, beberapa orang dengan GERD yang parah mungkin memerlukan obat-obatan yang lebih kuat atau operasi untuk meringankan gejala."
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

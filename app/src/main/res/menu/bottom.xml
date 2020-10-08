@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navhome"
+        android:title="Home"
+        android:icon="@drawable/ic_action_home"/>
+    <item android:id="@+id/navper"
+        android:title="Pemeriksaan GERD"
+        android:icon="@drawable/ic_action_perm"/>
+    <item android:id="@+id/Perbe"
+        android:title="Perbedaan GERD"
+        android:icon="@drawable/ic_action_perb"/>
+    <item android:id="@+id/menang"
+        android:title="Mengatasi GERD"
+        android:icon="@drawable/ic_action_menang"/>
+
+</menu>

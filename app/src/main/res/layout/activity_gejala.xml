@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fa9b98"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".Gejala">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="false">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintGuide_percent="0.06"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/molengo"
+            android:text="Gejala utama dari penyakit GERD adalah ketika asam lambung yang seharusnya tetap berada di dasar lambung bocor dan justru naik kembali ke atas akibat katup kerongkongan yang terbuka."
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="329dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgv"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/sedak" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namatvv"
+                    android:layout_width="226dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Merasa seperti ada makanan yang tersangkut di dalam kerongkongan, sulit menelan, serta cegukan"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="329dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvjar"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/sakit" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/jari"
+                    android:layout_width="226dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Mengalami sensasi panas seolah terbakar di dada (heartburn), yang bisa menyebar sampai ke leher"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="329dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvsmoke"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/batuk" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/smoke"
+                    android:layout_width="226dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Timbul rasa asam atau pahit di mulut dan masalah pernapasan, seperti batuk kronis dan asma"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay4"
+            android:layout_width="329dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay3">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img4"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/apitu" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="226dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ada cairan atau makanan yang naik dari dalam perut ke bagian mulut"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/molengo"
+            android:text="Secara garis besar , gejala gastroesophageal reflux disease (GERD) adalah"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

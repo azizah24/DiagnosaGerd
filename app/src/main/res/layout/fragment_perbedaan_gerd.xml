@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PerbedaanGerd"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f37778"
+        android:longClickable="false">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintGuide_percent="0.04"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="#ffdedb"
+            android:fontFamily="@font/molengo"
+            android:text="GERD adalah gangguan pencernaan jangka panjang atau kronis yang terjadi ketika asam lambung naik ke esofagus. GERD juga bentuk dari refluks gastroesofageal (GER) yang lebih serius dan tahan lama. Dilansir dari Stanford Childrens, gejala GERD pada orang dewasa dan anak-anak tentu berbeda."
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="371dp"
+            android:layout_height="345dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgv"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/kids" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namatvv"
+                    android:layout_width="226dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gangguan pencernaan ini umum dialami bayi usia di bawah 2 tahun dan anak-anak remaja usia 2 hingga 19 tahun.  Anak-anak berisiko tinggi menderita GERD karena mengonsumsi makanan seperti cokelat, permen dan makanan tinggi lemak. Adapula makanan lain yang memicu, seperti jeruk dan saus tomat.\n\nAdapun gejala GERD pada anak-anak, termasuk bersendawa, sakit perut, rewel ketika waktu makan, sering muntah, tersedak, sering batuk dan batuk malam hari. Gejala GERD pada anak-anak bisa disangka kondisi medis lainnya, karena itu Anda perlu mengonsultasikan tanda-tandanya kepada dokter."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="371dp"
+            android:layout_height="345dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bgcorner1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvjar"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/dewasa" />
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bgcorner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/jari"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sementara itu, penyebab GERD pada orang dewasa mungkin berbeda dengan anak-anak. Kondisi ini mungkin hanya terjadi 2 kali seminggu atau berlangsung selama beberapa minggu hingga bulan.  Menurut American College of Gastroentology dilansir dari Hellosehat, gejala GERD pada orang dewasa meliputi rasa terbakar di dada, gejala yang makin parah saat berbaring, mulut terasa asam atau pahit, masalah pada gigi dan gejala lainnya.\n\nOrang dewasa yang menderita GERD parah bisa mengembangkan kondisi lain, seperti batuk kronis, radang tenggorokan, asma dan susah tidur."
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/molengo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
